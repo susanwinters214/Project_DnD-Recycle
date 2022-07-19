@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Drag & Drop Items - Recycle or Trash?  </title>
+  <meta name="author" content="Susan Winters">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+<h1>Recycle or Trash?</h1>
+<p id="msg">Drag & Drop the items to the can they belong.</p><span id="responseMsg"></span>
+
+
+</header>
+
+<main id="container">
+<section><div id="trashCan" ondrop="drop(event)" ondragover="allowDrop(event)"><i class="fas fa-trash-alt fa-2x" style="color:white"></i><br /></div></section>
+<section><div id="recycleBin" ondrop="drop(event)" ondragover="allowDrop(event)"><i class="fas fa-recycle fa-2x" style="color:white"></i><br /></div></section>
+</main>
+<div id="shelf"> 
+    <img id="cardboard box" class="recycle" draggable="true" ondragstart="drag(event)" src="images/cardboardBox.jpg" alt="cardboard box" />
+    <img id="soda cans" class="recycle" draggable="true" ondragstart="drag(event)" src="images/sodaCans.jpg" alt="soda cans" />
+    <img id="bananas" class="trash" draggable="true" ondragstart="drag(event)" src="images/fruitBanana.jpg" alt="fruit">
+    <img id="plastic bag" class="recycle" draggable="true" ondragstart="drag(event)" src="images/plasticBag.jpg" alt="plastic bag">
+    <img id="plastic bottle" class="recycle" draggable="true" ondragstart="drag(event)" src="images/plasticBottle.jpg" class="plastic bottle">
+    <img id="paper plate" class="recycle" draggable="true" ondragstart="drag(event)" src="images/paperPlates.jpg" class="paper plates">
+</div>
+
+
+
+
+
+</body>
+</html>
